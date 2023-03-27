@@ -121,7 +121,7 @@ const qrCode = ref<QRCodeStyling>(new QRCodeStyling({
 }));
 
 
-watch(() => props.value, async () => {
+watch(() => ([props.value,props.dotsOptions,props.cornersSquareOptions,props.cornersDotOptions]), async () => {
   qrCode.value = new QRCodeStyling({
     data: props.value,
     width: props.width,

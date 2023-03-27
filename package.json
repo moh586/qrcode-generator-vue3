@@ -1,14 +1,15 @@
 {
-  "name": "qrcode-generator-vue3",
-  "version": "1.0.1",
-  "description": "Add a style and an image to your QR code Vue3 typescript",
-  "main": "./dist/qrcode-generator-vue3.umd.js",
+  "name": "@moh586/qrcode-generator-vue3",
+  "version": "1.0.5",
+  "description": "Add a style and an image to your QR code Vue3",
+  "main": "./dist/qrcode-generator-vue3.umd.cjs",
   "module": "./dist/qrcode-generator-vue3.js",
   "types": "./dist/index.d.ts",
+  "type": "module",
   "exports": {
     ".": {
-      "import": "./dist/qrcode-generator-vue3.esm.js",
-      "require": "./dist/qrcode-generator-vue3.js"
+      "import": "./dist/qrcode-generator-vue3.js",
+      "require": "./dist/qrcode-generator-vue3.umd.cjs"
     }
   },
   "files": [
@@ -33,5 +34,9 @@
     "vite-plugin-dts": "^2.1.0",
     "vue-tsc": "^1.2.0"
   },
-  "author": "MohamadAli Joneidi <joneidimohamad@gmail.com>, Diadal <info@diadal.com.ng>"
+  "author": "MohamadAli Joneidi <joneidimohamad@gmail.com>, Diadal <info@diadal.com.ng>",
+  "bugs": {
+    "url": "https://github.com/moh586/qrcode-generator-vue3/issues"
+  },
+  "homepage": "https://github.com/moh586/qrcode-generator-vue3"
 }
